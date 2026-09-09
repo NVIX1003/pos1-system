@@ -34,7 +34,7 @@
         <span class="text-6xl mb-1">{{ isListening ? '⏹️' : '🎙️' }}</span>
       
       </button>
-      <p class="text-sm text-slate-600 font-medium h-6 text-center">
+      <p class="text-sm text-slate-600 font-medium text-2xl h-6 text-center">
         {{ statusMessage }}
       </p>
     </div>
@@ -233,7 +233,7 @@
             try {
               recognition.start();
               isListening.value = true;
-              statusMessage.value = '🎙️ 正在聆聽中...講完請再按一次';
+              statusMessage.value = '確認無誤後，請再次點擊按鈕進行下一步';
             } catch (e) {
               console.error(e);
             }
